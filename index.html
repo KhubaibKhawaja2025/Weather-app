@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Weather app</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="logo">
+          <a href="/"><img src="assets/images/logo.svg" alt="logo image" /></a>
+        </div>
+        <div class="dropdown-menu">
+          <div class="dropdown">
+            <img src="assets/images/icon-units.svg" alt="units images" />
+            <span class="units-span">Units</span>
+            <img src="assets/images/icon-dropdown.svg" alt="dropdown image" />
+            <div class="dropdown-menu-content hidden">
+              <span class="switch-to-imperial-span">Switch to Imperial</span>
+              <div class="temp">
+                <span class="grey-span">Temperature</span>
+                <p class="option1">Celsius (°C)
+                <i class="fa-solid fa-check hide"></i>
+                </p>
+                <p class="option1">Farenheit (°F)
+                  <i class="fa-solid fa-check hide"></i>
+                </p>
+              </div>
+              <hr />
+              <div class="wind-speed">
+                <span class="grey-span">Wind Speed</span>
+                <p class="option2">km/h
+                  <i class="fa-solid fa-check hide"></i>
+                </p>
+                <p class="option2">mph
+                  <i class="fa-solid fa-check hide"></i>
+                </p>
+              </div>
+              <hr />
+              <div class="precipitation">
+                <span class="grey-span">Precipitation</span>
+                <p class="option3">Millimeters (mm)
+                  <i class="fa-solid fa-check hide"></i>
+                </p>
+                <p class="option3">Inches (in)
+                  <i class="fa-solid fa-check hide"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="search-content">
+          <h1>How's the sky looking today?</h1>
+          <div class="search-input-wrapper">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" placeholder="Search for a place..." />
+            <button>Search</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Khubaib</a>.
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
