@@ -40,7 +40,8 @@ body {
     cursor: pointer;
     position: relative;
 }
-.dropdown:focus{
+
+.dropdown:focus {
     border: 2px solid hsl(250, 6%, 84%);
 }
 
@@ -73,11 +74,12 @@ body {
 
 .temp,
 .wind-speed,
-.precipitation {
+.dropdown-menu-content .precipitation {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 
 .grey-span {
     color: hsl(240, 6%, 70%);
@@ -122,10 +124,12 @@ body {
     visibility: hidden;
     opacity: 0;
 }
-.bg{
+
+.bg {
     background-color: rgba(122, 122, 122, 0.1);
 }
-.hero-section .search-content{
+
+.hero-section .search-content {
     text-align: center;
     margin-top: 3rem;
     padding: 1em;
@@ -134,26 +138,33 @@ body {
     align-items: center;
     gap: 1rem;
 }
-.search-content h1{
+
+.search-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+
 .search-input-wrapper {
     position: relative;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 20px;
+    width: min(100%, 520px);
 }
+
 .search-icon {
     position: absolute;
     left: 1rem;
     color: hsl(250, 6%, 84%);
     pointer-events: none;
 }
-.search-content input{
+
+.search-content input {
+    flex: 1 1 auto;
     padding: 1rem 1rem;
     padding-left: 2.8rem;
-    width: min(100%, 340px);
+    width: 100%;
+    max-width: 100%;
     border-radius: 10px;
     background-color: hsl(243, 23%, 30%);
     outline: none;
@@ -161,10 +172,12 @@ body {
     color: hsl(250, 6%, 84%);
     font-size: 1.2rem;
 }
-.search-content input::placeholder{
+
+.search-content input::placeholder {
     color: hsl(250, 6%, 84%);
 }
-.search-content button{
+
+.search-content button {
     padding: 1rem 1.3rem;
     border-radius: 10px;
     border: none;
@@ -175,9 +188,142 @@ body {
     cursor: pointer;
     transition: all 200ms ease;
 }
-.search-content button:hover{
+
+.search-content button:hover {
     background-color: hsla(248, 70%, 36%, 0.778);
 }
-.search-content button:focus{
-    border: 2px solid hsl(248, 70%, 36%);
+
+.weather-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0 1rem 2rem;
+    width: 1396px;
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+.weather-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: min(800px, 100%);
+}
+
+.daily-forecast {
+    width: min(450px, 100%);
+}
+
+.weather-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.2rem 2rem;
+    background: url(assets/images/bg-today-large.svg) no-repeat center center;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.weather-info .temp {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sunny-icon {
+    width: 70px;
+    max-width: 100%;
+    display: block;
+}
+
+.weather-info .temp h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#city {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.weather-info-cards {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: hsl(243, 27%, 20%);
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1 1 0;
+}
+
+.card .cards-p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.cards-p-first {
+    color: hsl(240, 6%, 70%);
+    font-size: .8rem;
+}
+
+.daily-forecast {
+    width: 850px;
+    max-width: 100%;
+    padding: 1rem 1rem 2rem;
+}
+
+.daily-forecast-main-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.daily-forecast .daily-forecast-card {
+    background-color: hsl(243, 27%, 20%);
+    border-radius: 10px;
+    padding: 1rem;
+    flex: 1 1 0;
+}
+
+.daily-forecast .daily-forecast-card .daily-forecast-temp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.daily-forecast .daily-forecast-card .daily-forecast-temp span {
+    color: hsl(240, 6%, 70%);
+}
+
+.daily-forecast .daily-forecast-card .day-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.daily-forecast .daily-forecast-card img {
+    width: 50px;
+    max-width: 100%;
+    display: block;
+}
+.daily-forecast h1{
+    margin-bottom: 1rem;
+    font-weight: 600;
 }

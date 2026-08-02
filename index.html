@@ -1,4 +1,4 @@
-<!doctype html>
+< !doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -27,38 +27,45 @@
         </div>
         <div class="dropdown-menu">
           <div class="dropdown">
-            <img src="assets/images/icon-units.svg" alt="units images" />
-            <span class="units-span">Units</span>
-            <img src="assets/images/icon-dropdown.svg" alt="dropdown image" />
+            <img src="assets/images/icon-units.svg" alt="units images" /><span
+              class="units-span"
+              >Units</span
+            ><img src="assets/images/icon-dropdown.svg" alt="dropdown image" />
             <div class="dropdown-menu-content hidden">
               <span class="switch-to-imperial-span">Switch to Imperial</span>
               <div class="temp">
                 <span class="grey-span">Temperature</span>
-                <p class="option1">Celsius (°C)
-                <i class="fa-solid fa-check hide"></i>
+                <p class="option1">
+                  Celsius (°C)
+                  <img src="assets/images/icon-checkmark.svg" class="hide" />
                 </p>
-                <p class="option1">Farenheit (°F)
-                  <i class="fa-solid fa-check hide"></i>
+                <p class="option1">
+                  Farenheit (°F)
+                  <img src="assets/images/icon-checkmark.svg" class="hide" />
                 </p>
               </div>
               <hr />
               <div class="wind-speed">
                 <span class="grey-span">Wind Speed</span>
-                <p class="option2">km/h
-                  <i class="fa-solid fa-check hide"></i>
+                <p class="option2">
+                  km/h
+                  <img src="assets/images/icon-checkmark.svg" class="hide" />
                 </p>
-                <p class="option2">mph
-                  <i class="fa-solid fa-check hide"></i>
+                <p class="option2">
+                  mph
+                  <img src="assets/images/icon-checkmark.svg" class="hide" />
                 </p>
               </div>
               <hr />
               <div class="precipitation">
                 <span class="grey-span">Precipitation</span>
-                <p class="option3">Millimeters (mm)
-                  <i class="fa-solid fa-check hide"></i>
+                <p class="option3">
+                  Millimeters (mm)
+                  <img src="assets/images/icon-checkmark.svg" class="hide" />
                 </p>
-                <p class="option3">Inches (in)
-                  <i class="fa-solid fa-check hide"></i>
+                <p class="option3">
+                  Inches (in)
+                  <img src="assets/images/icon-checkmark.svg" class="hide" />
                 </p>
               </div>
             </div>
@@ -71,12 +78,137 @@
         <div class="search-content">
           <h1>How's the sky looking today?</h1>
           <div class="search-input-wrapper">
-            <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            <input type="text" placeholder="Search for a place..." />
-            <button>Search</button>
+            <img
+              src="assets/images/icon-search.svg"
+              class="search-icon"
+            /><input type="text" placeholder="Search for a place..." /><button>
+              Search
+            </button>
           </div>
         </div>
       </section>
+      <div class="weather-layout">
+        <section class="weather-showcase">
+          <div class="weather-info">
+            <div class="city-date">
+              <p id="city">Berlin, Germany</p>
+              <p id="date">Tuesday, Aug 2, 2026</p>
+            </div>
+            <div class="temp">
+              <img
+                id="sunny"
+                src="assets/images/icon-sunny.webp"
+                class="sunny-icon"
+              />
+              <h1 id="temperature">20°</h1>
+            </div>
+          </div>
+          <div class="weather-info-cards">
+            <div class="feels-like-card card">
+              <p class="cards-p-first">Feels Like</p>
+              <p id="feels-like" class="feels-like-p cards-p">18°</p>
+            </div>
+            <div class="humidity-card card">
+              <p class="cards-p-first">Humidity</p>
+              <p id="humidity" class="humidity-p cards-p">46%</p>
+            </div>
+            <div class="wind-card card">
+              <p class="cards-p-first">Wind</p>
+              <p id="wind" class="wind-p cards-p">14 km/h</p>
+            </div>
+            <div class="precipitation-card card">
+              <p class="cards-p-first">Precipitation</p>
+              <p id="precipitation" class="precipitation-p cards-p">0 mm</p>
+            </div>
+          </div>
+        </section>
+        <section class="daily-forecast">
+          <h1>Daily forecast</h1>
+          <div class="daily-forecast-main-content">
+            <div class="tue daily-forecast-card">
+              <div class="day-content">
+                <span class="daily-forecast-span-first">Tue</span
+                ><img src="assets/images/icon-rain.webp" class="rainy-icon" />
+              </div>
+              <div class="daily-forecast-temp">
+                <span>20°</span><span>14°</span>
+              </div>
+            </div>
+            <div class="wed daily-forecast-card">
+              <div class="day-content">
+                <span class="daily-forecast-span-first">Wed</span
+                ><img
+                  src="assets/images/icon-drizzle.webp"
+                  class="rainy-icon"
+                />
+              </div>
+              <div class="daily-forecast-temp">
+                <span>21°</span><span>15°</span>
+              </div>
+            </div>
+            <div class="thu daily-forecast-card">
+              <div class="day-content">
+                <span class="daily-forecast-span-first">Thu</span
+                ><img
+                  src="assets/images/icon-sunny.webp"
+                  class="sunny-icon-thu"
+                />
+              </div>
+              <div class="daily-forecast-temp">
+                <span>24°</span><span>14°</span>
+              </div>
+            </div>
+            <div class="fri daily-forecast-card">
+              <div class="day-content">
+                <span class="daily-forecast-span-first">Fri</span
+                ><img
+                  src="assets/images/icon-partly-cloudy.webp"
+                  class="partly-cloudy-icon-fri"
+                />
+              </div>
+              <div class="daily-forecast-temp">
+                <span>25°</span><span>13°</span>
+              </div>
+            </div>
+            <div class="Sat daily-forecast-card">
+              <div class="day-content">
+                <span class="daily-forecast-span-first">Sat</span
+                ><img
+                  src="assets/images/icon-storm.webp"
+                  class="storm-icon-sat"
+                />
+              </div>
+              <div class="daily-forecast-temp">
+                <span>21°</span><span>15°</span>
+              </div>
+            </div>
+            <div class="Sun daily-forecast-card">
+              <div class="day-content">
+                <span class="daily-forecast-span-first">Sun</span
+                ><img
+                  src="assets/images/icon-snow.webp"
+                  class="snow-icon-sun"
+                />
+              </div>
+              <div class="daily-forecast-temp">
+                <span>25°</span><span>16°</span>
+              </div>
+            </div>
+            <div class="Mon daily-forecast-card">
+              <div class="day-content">
+                <span class="daily-forecast-span-first">Mon</span
+                ><img
+                  src="assets/images/icon-fog.webp"
+                  class="sunny-icon-thu"
+                />
+              </div>
+              <div class="daily-forecast-temp">
+                <span>24°</span><span>15°</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="attribution">
       Challenge by

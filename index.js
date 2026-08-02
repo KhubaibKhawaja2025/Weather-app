@@ -4,11 +4,11 @@ let precipitationOptions = document.querySelectorAll(".option3");
 
 function toggleSelection(options, clickedOption) {
   options.forEach((opt) => {
-    opt.querySelector("i")?.classList.add("hide");
+    opt.querySelector("img")?.classList.add("hide");
     opt.classList.remove("bg");
   });
 
-  clickedOption.querySelector("i")?.classList.remove("hide");
+  clickedOption.querySelector("img")?.classList.remove("hide");
   clickedOption.classList.add("bg");
 }
 
